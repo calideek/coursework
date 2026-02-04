@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Power Gym</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      min-height: 100vh;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #ffd700;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      padding: 8px 18px;
+      border-radius: 20px;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      background: #ffd700;
+      color: #000;
+    }
+
+    .container {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 120px 20px 40px;
+    }
+
+    .about-box {
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      max-width: 900px;
+      width: 100%;
+      display: flex;
+      gap: 30px;
+      padding: 40px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    }
+
+    .about-img img {
+      width: 100%;
+      border-radius: 20px;
+      border: 3px solid #ffd700;
+    }
+
+    .about-text h1 {
+      font-size: 2.5rem;
+      color: #ffd700;
+      margin-bottom: 15px;
+    }
+
+    .about-text p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 25px;
+    }
+
+    .about-text button {
+      padding: 12px 30px;
+      border: none;
+      border-radius: 30px;
+      background: #ffd700;
+      color: #000;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .about-text button:hover {
+      background: #ffbf00;
+      transform: scale(1.1);
+    }
+
+    @media (max-width: 768px) {
+      .about-box {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<meta name="google" content="notranslate">
+<body>
+
+  <nav>
+    <div class="logo"> welcome to Power Gym</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+    </ul>
+  </nav>
+
+  <section class="container">
+    <div class="about-box">
+      <div class="about-img">
+        <img src="https://images.unsplash.com/photo-1594737625785-41d4d6a9b0f0?auto=format&fit=crop&w=600&q=80" alt="Gym">
+      </div>
+
+      <div class="about-text">
+        <h1>ula jeedada gym ka</h1>
+        <p>
+          Power Gym waa meel lagu dhiso jir adag, adkaysi iyo nolol
+          caafimaad leh si aad u gaarto yoolalkaaga jimicsi.
+        </p>
+
+        <button onclick="location.href='index.html'">
+          Ku soo Biir Gym-kena
+        </button>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

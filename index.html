@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Power Gym</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #6d5151;
+            color: white;
+            margin: 0;
+        }
+
+        header {
+            background: #e63946;
+            padding: 20px;
+            text-align: center;
+        }
+ 
+   nav{
+    color: white;
+    font-size: large;
+    font-weight: 100;
+    text-decoration: double;
+    text-emphasis-color: calc();
+   }
+        section {
+            padding: 20px;
+        }
+
+        .card {
+            background: #222;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        input, button {
+            width: 50%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        button {
+            background: #e63946;
+            color: white;
+            cursor: pointer;
+        }
+
+        .error { color: red; }
+        .success { color: lightgreen; }
+
+        footer {
+            background: rgb(58, 45, 45);
+            text-align: center;
+            padding: 10px;
+        }
+
+        .result {
+            background: #333;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+ <nav>
+    <div class="logo"></div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="home.html" class="active">About</a></li>
+    </ul>
+  </nav>
+<header>
+    <h1> WELCOME TO POWER GYM </h1>
+    <p>Build Your Body</p>
+</header>
+
+    <div class="card">
+        <h2>Membership Form</h2>
+
+        <form id="gymForm">
+            <input type="text" id="name" placeholder="Full Name">
+            <input type="text" id="age" placeholder="age">
+            <input type="text" id="phone" placeholder="Phone Number">
+            <input type="number" id="amount" placeholder="Amount ($)">
+            <button type="submit">Join Now</button>
+        </form>
+
+        <p id="message"></p>
+
+        <!-- RESULT -->
+        <div class="result" id="resultBox">
+            <h3>Member Details</h3>
+            <p><strong>Name:</strong> <span id="rName"></span></p>
+              <p><strong>age:</strong> <span id="rage"></span></p>
+            <p><strong>Phone:</strong> <span id="rPhone"></span></p>
+            <p><strong>Amount Paid:</strong> $<span id="rAmount"></span></p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p> Power Gym waxa uu kuyalaa saybiyaano</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html
